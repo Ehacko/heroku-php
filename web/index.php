@@ -14,8 +14,7 @@ $app->register(new Silex\Provider\MonologServiceProvider(), array(
 
 $app->get('/', function() use($app) {
   $app['monolog']->addDebug('logging output.');
-  //echo 'test'
-  return '';
+  return $app['php']->render('codeigniter/index.php');
 });
 
 $app->run();
