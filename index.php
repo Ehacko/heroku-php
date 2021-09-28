@@ -1,2 +1,3 @@
 <?php
-require 'web/index.php';
+#require 'web/index.php';
+echo 'test';
